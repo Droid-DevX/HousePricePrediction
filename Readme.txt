@@ -67,7 +67,7 @@ Common issues:
 Contributors names and contact info
 
 * Ayush Tandon (Droid-DevX)
-    * GitHub: [https://github.com/Droid-DevX](https://github.com/Droid-DevX)
+    * GitHub: https://github.com/Droid-DevX/Droid-DevX
 
 ## Version History
 
@@ -91,3 +91,4 @@ Inspiration, code snippets, and data sources:
 * Streamlit
 * Pandas & NumPy
 * Matplotlib
+
