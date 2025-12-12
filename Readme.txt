@@ -20,7 +20,7 @@ This project implements an end-to-end workflow for training and deploying a hous
 1.  Download or clone the repository:
 
     bash
-    git clone [https://github.com/your-username/RealEstateValuePredictor.git](https://github.com/your-username/RealEstateValuePredictor.git)
+    git clone https://github.com/Droid-DevX/HousePricePrediction
     cd RealEstateValuePredictor
     
 
@@ -91,4 +91,5 @@ Inspiration, code snippets, and data sources:
 * Streamlit
 * Pandas & NumPy
 * Matplotlib
+
 
