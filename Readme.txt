@@ -1,94 +1,93 @@
 # Real Estate Value Predictor
 
-A machine learning–powered web application designed to estimate housing prices using Linear Regression and engineered real estate features. The system is deployed with Streamlit and provides a modern interface, authentication, and real-time visual output.
+A machine learning–powered web application for predicting real estate property values using regression models and engineered housing features.
 
-## Overview
-This project demonstrates a complete workflow for building, training, and deploying a regression model using the Ames Housing dataset. Users can input property characteristics such as quality, living area, garage size, and year built, and receive an estimated market value in USD.  
-The pipeline includes preprocessing, scaling, encoding, and correlation-based feature selection to improve prediction accuracy.
+## Description
 
-## Features
-- Predicts real estate prices using a trained Linear Regression model  
-- StandardScaler applied to numerical features  
-- One-hot encoding for categorical inputs  
-- Correlation-based feature selection  
-- Secure login system  
-- Custom-designed Streamlit user interface  
-- Real-time prediction results with structured summary  
-- Pie chart visualization for feature contribution  
-- Model artifacts stored as `.pkl` files  
+This project implements an end-to-end workflow for training and deploying a house price prediction system using the Ames Housing dataset. It applies *Linear Regression* with scaling, one-hot encoding, and correlation-based feature selection. The system includes user *authentication*, data visualization (feature summary table and pie chart), and stores reusable model artifacts as .pkl files. A *Streamlit* web application provides an interactive interface where users can input property attributes and receive price predictions in USD.
 
-## Technology Stack
+## Getting Started
 
-### Machine Learning
-- Linear Regression  
-- Ridge Regression  
-- StandardScaler  
-- One-hot Encoding  
-- Train/Validation Split  
-- Cross-Validation  
+### Dependencies
 
-### Web Application
-- Streamlit  
-- Python 3.x  
-- Matplotlib  
+* Python 3.x
+* Required libraries listed in requirements.txt (including Streamlit, Scikit-learn, Pandas, NumPy, Matplotlib)
+* Compatible with Windows, macOS, and Linux
+* Streamlit for running the web interface
 
-## Repository Structure
-RealEstateValuePredictor/
-│
-├── app.py # Streamlit web application
-├── model.pkl # Trained ML model
-├── scaler.pkl # Scaler used during training
-├── columns.pkl # Ordered feature list
-├── requirements.txt # Dependencies
-└── README.md # Documentation
+### Installing
 
-## Model Artifacts
-| File          | Description |
-|---------------|-------------|
-| `model.pkl`   | Trained Linear Regression model |
-| `scaler.pkl`  | StandardScaler fitted on training data |
-| `columns.pkl` | Feature names used during training |
+1.  Download or clone the repository:
 
-## How to Run
+    bash
+    git clone [https://github.com/your-username/RealEstateValuePredictor.git](https://github.com/your-username/RealEstateValuePredictor.git)
+    cd RealEstateValuePredictor
+    
 
-### Install Dependencies
-```bash
-pip install -r requirements.txt
+2.  Install required dependencies:
 
-### Launch Application
-streamlit run app.py
-### Default Credentials
-[ Username: Ayush
-Password: lolipop123 ]
+    bash
+    pip install -r requirements.txt
+    
 
---Example Prediction
-Input:
-Overall Quality: 7
-Living Area: 2200 sq ft
-Garage Cars: 2
-Full Bathrooms: 2
-Year Built: 2003
+3.  Ensure the following serialized model/data files, generated during the training phase, exist in the project directory:
+    * model.pkl
+    * scaler.pkl
+    * columns.pkl
 
-Output:
+### Executing program
 
-Estimated Price: $245,800
+1.  Launch the Streamlit application:
 
---Future Improvements
+    bash
+    streamlit run app.py  # Assuming your main application file is named app.py
+    
 
-Additional models (Random Forest, Gradient Boosting, XGBoost)
-Deployment on Streamlit Cloud or HuggingFace Spaces
-Historical prediction logging
-Confidence interval estimation
-More detailed feature support
+2.  Use the default login credentials:
+    * *Username:* Ayush
+    * *Password:* lolipop123
 
---License
+3.  After login:
+    * Enter property attributes using the input fields.
+    * View the predicted price in USD.
+    * Review the feature summary table and pie chart visualization.
 
-This project is open-source and free to modify.
+## Help
 
---Acknowledgments
+Common issues:
 
-Scikit-Learn
-Pandas & NumPy
-Streamlit
-Matplotlib
-Ames Housing Dataset
+* *Missing model/scaler/column files:* Ensure .pkl files are placed in the project directory.
+* *Module import errors:* Reinstall dependencies:
+    bash
+    pip install -r requirements.txt
+    
+
+## Authors
+
+Contributors names and contact info
+
+* Ayush Tandon (Droid-DevX)
+    * GitHub: [https://github.com/Droid-DevX](https://github.com/Droid-DevX)
+
+## Version History
+
+* 0.2
+    * UI improvements
+    * Authentication added
+    * Visualization features added
+    * Model optimization using Ridge Regression
+* 0.1
+    * Initial regression model and basic Streamlit interface
+
+## License
+
+This project is licensed under the *MIT License*. See the LICENSE file for full details.
+
+## Acknowledgments
+
+Inspiration, code snippets, and data sources:
+* Ames Housing Dataset
+* Scikit-learn
+* Streamlit
+* Pandas & NumPy
+* Matplotlib
